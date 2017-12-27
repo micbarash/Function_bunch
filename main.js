@@ -1,3 +1,21 @@
+// *** Remove From Array ***
+let removeFromArray = function(a, b) {
+  a = prompt("Enter first array");
+  b = prompt("Enter second array");
+  let arr1 = a.split("");
+  let arr2 = b.split("");
+  let holderArray = [];
+  for (var i = 0; i < arr1.length; i++) {
+    if (arr2.indexOf(arr1[i]) === -1) {
+      //alert('no match found');
+    } else {
+    holderArray.push(arr1.splice(i,1));
+      i = i-1;
+    };
+  }
+  alert(arr1);
+};
+// *** Sum All ***
 let sumAll = function(int1, int2) {
   int1 = prompt('Enter bottom number');
   int2 = prompt('Enter top number');

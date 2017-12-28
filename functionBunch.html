@@ -3,27 +3,40 @@
 <head>
   <title>A bunch of functions</title>
   <script src="main.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>Some Useless Functions</h1>
-  <div id="rptStr">
-    <h3>Repeat String</h3>
-  </div>
   <div id="rvrStr">
     <h3>Reverse String</h3>
-    <button onclick="reverseString()">Reverse String</button>
+    <form>
+      <input id="frm8" type="text" name="str1" placeholder="String to reverse"><br />
+      <button onclick="reverseString()">Reverse String</button>
+    </form>
   </div>
   <div id="rmvArr">
     <h3>Remove From Array</h3>
-    <button onclick="removeFromArray()">Remove From Array</button>
+    <form>
+      <input id="frm6" type="text" name="arr1" placeholder="Array 1"><br /><br />
+      <input id="frm7" type="text" name="arr2" placeholder="Array 2"><br />
+      <button onclick="removeFromArray()">Remove From Array</button>
+    </form>
   </div>
   <div id="sumAll">
     <h3>Sum All</h3>
-    <button onclick="sumAll()">Sum All</button>
+    <form>
+      <input id="frm4" type="text" name="int1" placeholder="Integer 1"><br />
+      <br />
+      <input id="frm5" type="text" name="int2" placeholder="Integer 2"><br />
+      <button onclick="sumAll()">Sum All</button>
+    </form>
   </div>
   <div id="lpYear">
     <h3>Leap Year</h3>
-    <button onclick="leapYear()">Check Year</button>
+    <form>
+      <input id="frm3" type="text" name="year" placeholder="Enter year">
+      <button onclick="leapYear()">Check Year</button>
+    </form>
   </div>
   <div id="tempConv">
     <h3>Temp Conversion</h3>

@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>A bunch of functions</title>
-<body>
+  <title>A bunch of functions</title>
   <script src="main.js"></script>
+</head>
+<body>
   <h1>Some Useless Functions</h1>
-  <br><br>
   <div id="rptStr">
     <h3>Repeat String</h3>
   </div>
   <div id="rvrStr">
     <h3>Reverse String</h3>
+    <button onclick="reverseString()">Reverse String</button>
   </div>
   <div id="rmvArr">
     <h3>Remove From Array</h3>
@@ -26,9 +27,14 @@
   </div>
   <div id="tempConv">
     <h3>Temp Conversion</h3>
-    <button onclick="ctof()">Convert C to F</button><br><br>
-    <button onclick="ftoc()">Convert F to C</button>
+    <form>
+      <input id="frm1" type="text" name="tempc" placeholder="Temperature in C">
+      <button onclick="ctof()">Convert C to F</button><br><br>
+    </form>
+    <form>
+      <input id="frm2" type="text" name="tempf" placeholder="Temperature in F">
+      <button onclick="ftoc()">Convert F to C</button>
+    </form>
   </div>
 </body>
-</head>
 </html>
